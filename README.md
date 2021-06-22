@@ -13,6 +13,11 @@
 ## 動作確認
 
 ```shell
+$ git clone https://github.com/cpucreators/devcontainer
+$ cd devcontainer
+
+# コマンドパレットから Remote-Containers: Reopen in Container を選択
+
 $ git clone https://github.com/freechipsproject/chisel-template
 $ cd chisel-template
 $ sbt test
