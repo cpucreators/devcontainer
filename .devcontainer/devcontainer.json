@@ -1,0 +1,23 @@
+{
+  "name": "cpucreators",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "11",
+      "INSTALL_MAVEN": "false",
+      "INSTALL_GRADLE": "false",
+      "INSTALL_NODE": "false",
+      "NODE_VERSION": "lts/*",
+      "INSTALL_SBT": "true"
+    }
+  },
+  "settings": {
+    "java.home": "/docker-java-home"
+  },
+  "extensions": [
+    "docsmsft.docs-authoring-pack",
+    "scala-lang.scala",
+    "vscjava.vscode-java-pack"
+  ],
+  "remoteUser": "vscode"
+}
