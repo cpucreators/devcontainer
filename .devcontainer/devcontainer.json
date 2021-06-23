@@ -8,7 +8,8 @@
       "INSTALL_GRADLE": "false",
       "INSTALL_NODE": "false",
       "NODE_VERSION": "lts/*",
-      "INSTALL_SBT": "true"
+      "INSTALL_SBT": "true",
+      "INSTALL_RISCV_GNU_TOOLCHAIN": "false"
     }
   },
   "settings": {

@@ -10,15 +10,9 @@
 4. このリポジトリの`.devcontainer`以下をコピペ
 5. コマンドパレットから`Remote-Containers: Reopen in Container`を選択
 
-## 動作確認
+## riscv-gnu-toolchainのインストール
 
-```shell
-$ git clone https://github.com/cpucreators/devcontainer
-$ cd devcontainer
+以下のどちらかを行う（インストールはかなり時間がかかる）
 
-# コマンドパレットから Remote-Containers: Reopen in Container を選択
-
-$ git clone https://github.com/freechipsproject/chisel-template
-$ cd chisel-template
-$ sbt test
-```
+- `/usr/local/share/cpucreators/riscv-gnu-toolchain.sh`を実行
+- `devcontainer.json`の`INSTALL_RISCV_GNU_TOOLCHAIN`を`true`してコンテナをビルド

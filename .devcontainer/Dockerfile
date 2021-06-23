@@ -22,6 +22,12 @@ ARG INSTALL_SBT="true"
 ARG SBT_VERSION=""
 RUN if [ "${INSTALL_SBT}" = "true" ]; then su vscode -c "umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install sbt \"${SBT_VERSION}\""; fi
 
+# [Option] Install riscv-gnu-toolchain
+# https://github.com/riscv/riscv-gnu-toolchain
+ARG INSTALL_RISCV_GNU_TOOLCHAIN="false"
+COPY riscv-gnu-toolchain.sh /usr/local/share/cpucreators/
+RUN if [ "${INSTALL_RISCV_GNU_TOOLCHAIN}" = "true" ]; then /usr/local/share/cpucreators/riscv-gnu-toolchain.sh; fi
+
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
