@@ -18,7 +18,8 @@
   "extensions": [
     "docsmsft.docs-authoring-pack",
     "scala-lang.scala",
-    "vscjava.vscode-java-pack"
+    "vscjava.vscode-java-pack",
+    "scalameta.metals"
   ],
   "remoteUser": "vscode"
 }
